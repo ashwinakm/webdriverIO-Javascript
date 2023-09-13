@@ -1,4 +1,5 @@
 // Following section will demonstrate how can we use package and activities efficiently.
+// Add comment for Git test
 describe('Android Native Feature Tests', () => {
     it('Access an Activity directly', async () => {
       // access activity
