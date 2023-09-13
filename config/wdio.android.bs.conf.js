@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path');
 const {config} = require('./wdio.shared.conf');
 
@@ -5,8 +6,8 @@ const {config} = require('./wdio.shared.conf');
 // Browserstack Credentials
 // ================
 
-config.user = 'akumarmishra_1TXJBI' ;
-config.key = 'dJaz7sHnXdpcWvqxAfXD' ;
+config.user = process.env.BROWSERSTACK_USER;
+config.key = process.env.BROWSERSTACK_KEY ;
 
 // ================
 // Specs
